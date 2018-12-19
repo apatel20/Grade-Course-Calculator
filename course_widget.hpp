@@ -2,6 +2,8 @@
 #include <QWidget>
 #include <QPlainTextEdit>
 #include <QDoubleSpinBox>
+#include <QSpinBox>
+#include <QDoubleSpinBox>
 #include <QPushButton>
 #include <QComboBox>
 #include <QLineEdit>
@@ -9,6 +11,9 @@
 #include <QGraphicsScene>
 #include <QStringList>
 #include <QLayout>
+#include <QLabel>
+#include <QTableView>
+
 
 class CourseWidget : public QWidget
 {
@@ -17,18 +22,27 @@ class CourseWidget : public QWidget
 public:
   CourseWidget();
 
+  void calculatePrint();
+
+protected:
+  GradeCalc  * myGrade;
 
 private:
   QPushButton * add;
+  QPushButton * calculate;
 
   QDoubleSpinBox * weight;
 
   QComboBox * assignType;
 
-  QLineEdit * numerator;
+  QSpinBox * numerator;
 
-  QLineEdit * denominator;
+  QSpinBox * denominator;
 
   QGraphicsView * view;
   QGraphicsScene * scene;
+
+public slots:
+  void onLButtonPressed();
+  void onRButtonPressed();
 };

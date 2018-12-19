@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Ankit Patel\Documents\PersonalProjects\CourseGradeCalc\course_widget_main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Ankit Patel\Documents\PersonalProjects\CourseGradeCalc\course_widget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Ankit Patel\Documents\PersonalProjects\CourseGradeCalc\courseGradeCalc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Ankit Patel\Documents\PersonalProjects\CourseGradeCalc\build\gui_autogen\mocs_compilation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\Ankit Patel\Documents\PersonalProjects\CourseGradeCalc\course_widget.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Ankit Patel\Documents\PersonalProjects\CourseGradeCalc\courseGradeCalc.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Ankit Patel\Documents\PersonalProjects\CourseGradeCalc\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{ADB47292-6CC7-3670-B4EA-C8FB72B0C2F0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{FE309D92-AD11-30D7-B45A-D6CBBD68DD6B}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

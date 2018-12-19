@@ -18,5 +18,5 @@ if (Qt5Widgets_FOUND AND Qt5Test_FOUND)
 endif()
 
 # build the program
-add_executable(gui course_widget_main.cpp course_widget.hpp course_widget.cpp)
+add_executable(gui course_widget_main.cpp course_widget.hpp course_widget.cpp courseGradeCalc.hpp courseGradeCalc.cpp)
 target_link_libraries(gui Qt5::Widgets Qt5::Test)

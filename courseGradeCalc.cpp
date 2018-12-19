@@ -1,13 +1,19 @@
 #include "courseGradeCalc.hpp"
 
-GradeCalc::GradeCalc()
-{
+GradeCalc::GradeCalc() {}
 
-}
 
 GradeCalc::~GradeCalc()
 {
   grades.clear();
+}
+
+GradeCalc::ConstIteratorType GradeCalc::vecConstBegin() const noexcept{
+  return grades.cbegin();
+}
+
+GradeCalc::ConstIteratorType GradeCalc::vecConstEnd() const noexcept{
+  return grades.cend();
 }
 
 bool GradeCalc::insertGrade(Grade grade)
@@ -16,9 +22,6 @@ bool GradeCalc::insertGrade(Grade grade)
   //in those cases, otherwise put the grades in the vector
 
   //for now, assume all grades are good
-  //cout << "Assignment Type" << grade.assignmentType << endl;
-  //cout << "Grade" << grade.grade << endl;
-  //cout << "Weight" << grade.weight << endl;
   grades.push_back(grade);
   return true;
 }
@@ -28,7 +31,7 @@ int GradeCalc::getCount()
   return grades.size();
 }
 
-void GradeCalc::calculate()
+double GradeCalc::calculate()
 {
   //this function will perform the calculation and return to standard output
   double result = 0.0;
@@ -39,5 +42,5 @@ void GradeCalc::calculate()
   }
 
   cout << setprecision(5) << "Current Grade in the class is: " << result * 100 << endl;
-
+  return result;
 }

@@ -79,7 +79,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELEASE:STRING=/INCREMENTAL:NO
 CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO:STRING=/debug /INCREMENTAL
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=GRADE-CALC
+CMAKE_PROJECT_NAME:STATIC=gui
 
 //RC compiler
 CMAKE_RC_COMPILER:FILEPATH=rc
@@ -157,6 +157,27 @@ GRADE-CALC_BINARY_DIR:STATIC=C:/Users/Ankit Patel/Documents/PersonalProjects/Cou
 
 //Value Computed by CMake
 GRADE-CALC_SOURCE_DIR:STATIC=C:/Users/Ankit Patel/Documents/PersonalProjects/CourseGradeCalc
+
+//The directory containing a CMake configuration file for Qt5Core.
+Qt5Core_DIR:PATH=C:/Qt/5.11.1/msvc2015/lib/cmake/Qt5Core
+
+//The directory containing a CMake configuration file for Qt5Gui.
+Qt5Gui_DIR:PATH=C:/Qt/5.11.1/msvc2015/lib/cmake/Qt5Gui
+
+//The directory containing a CMake configuration file for Qt5Test.
+Qt5Test_DIR:PATH=C:/Qt/5.11.1/msvc2015/lib/cmake/Qt5Test
+
+//The directory containing a CMake configuration file for Qt5Widgets.
+Qt5Widgets_DIR:PATH=C:/Qt/5.11.1/msvc2015/lib/cmake/Qt5Widgets
+
+//The directory containing a CMake configuration file for Qt5.
+Qt5_DIR:PATH=C:/Qt/5.11.1/msvc2015/lib/cmake/Qt5
+
+//Value Computed by CMake
+gui_BINARY_DIR:STATIC=C:/Users/Ankit Patel/Documents/PersonalProjects/CourseGradeCalc/build
+
+//Value Computed by CMake
+gui_SOURCE_DIR:STATIC=C:/Users/Ankit Patel/Documents/PersonalProjects/CourseGradeCalc
 
 
 ########################
