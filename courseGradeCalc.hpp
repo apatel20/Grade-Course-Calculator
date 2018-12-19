@@ -5,11 +5,13 @@ and spit out the current grade in the class*/
 #include <iostream>
 #include <fstream>
 #include <vector>
+#include <iomanip>
 
 using std::string;
 using std::cout;
 using std::endl;
 using std::cin;
+using std::setprecision;
 
 struct Grade
 {
@@ -30,13 +32,6 @@ public:
   int getCount();
 
   void calculate();
-
-  //void setAssignmentType();
-
-  //void setGradeValue();
-
-  //void setWeight();
-
 
 private:
 

@@ -12,36 +12,42 @@ int main()
 
   do
   {
-    cout << "Type of assignment (HW, Quiz, Test, Project, Final)?:\t";
+    cout << "Type of assignment (HW, Quiz, Test, Project, Final)?:";
     cin.ignore();
     cin >> temp.assignmentType;
 
-    cout << "Total Grade as a fraction?:\t";
+    cout << "Total Grade as a fraction (Enter numerator first, press enter, then denominator):\n";
     cin.ignore();
-    cin >> temp.grade;
+    double num;
+    double denom;
 
-    cout << "What is the weight of the assignment (% as a decimal)?:\t";
+    cin >> num;
+    cout << "----\n";
+    cin >> denom;
+
+    temp.grade = num/denom;
+
+    cout << "What is the weight of the assignment (% as a decimal)?:";
     cin.ignore();
     cin >> temp.weight;
 
-
     g.insertGrade(temp);
 
-    cout << "Are you done entering grades? Type 1 for yes or 0 to still enter grades...:\t";
+    cout << "Are you done entering grades? Type 1 for yes or 0 to still enter grades...:";
     cin.ignore();
-    cin >> keepGoing;
+    char temp = cin.get();
 
-    if (keepGoing == 0)
+    if (temp == '0')
     {
       break;
     }
-    if (keepGoing != 0 || keepGoing != 1)
+    else if (temp != '1')
     {
       cout << "Please enter one of the choices above!" << endl;
     }
-    //cout << g.getCount() << endl;
+  } while (true);
 
-  } while (keepGoing != 1);
+  g.calculate();
 
   return 0;
 }
