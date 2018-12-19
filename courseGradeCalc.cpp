@@ -35,10 +35,7 @@ void GradeCalc::calculate()
 
   for (auto it = grades.begin(); it != grades.end(); ++it)
   {
-    cout << "THIS IS THE GRADE: " << ((*it).grade) << endl;
-    cout << "THIS IS THE Weight: " << ((*it).weight) << endl;
     result += ((*it).grade) * ((*it).weight);
-    cout << "THIS IS RESULT: " << result << endl;
   }
 
   cout << setprecision(5) << "Current Grade in the class is: " << result * 100 << endl;
