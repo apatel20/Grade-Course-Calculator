@@ -1,4 +1,4 @@
-# Welcome to my Course Grade Calculator
+# Welcome to my Music Tracker
 
 ## Project Description
 This project makes it very simple to calculate your current grade in a course that has course weights
@@ -7,12 +7,17 @@ This project makes it very simple to calculate your current grade in a course th
 Tested on Windows OS, C++11
 
 ## Usage
-Not a command line application yet, works with I/O prompts when program is run
+Can be run on command line or using the GUI application
 
 ## Underlying Program Facts
-System Design Implementation
+ - System Design Implementation
+ - Incorporated Qt
 Key OOP Used
  - Classes
  - Dynamic Programming (DP)
-Data Structures Used
+## Data Structures Used
  - Vector
+
+## To-Do
+ - Need to edit CMakeLists.txt file to include both executables, one for command
+  line application and one for GUI application
